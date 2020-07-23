@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,400&display=swap');
+
+:root{
+    --main-color : #3c3c54;
+    --writing-color: #a3a3a3;
+    --second-color: #f8f5e3;
+    --carmen-color: #A55FD7;
+    --dana-color: #fbab26;
+    --eslem-color: #434E85;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    background-color: var(--second-color);
+    color:#94949C ;
+}
+.navbar .container{
+    max-width: 1100px;
+    margin: auto ;
+    overflow: hidden;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    margin: 0px;
+    font-size: 25px;
+    background-color: var(--second-color);
+    z-index: 100;
+    
+}
+.navbar .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.navbar .nav{
+    display:flex;
+    justify-self: flex-end;
+    align-items: center;
+    margin-left: 10px;
+
+}
+ ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+.navbar .nav a{
+    text-decoration: none;
+    padding: 0 20px;
+}
+/* eslem ouederni hi  */
+.eslemouederni .container{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:80px;
+    padding-top: 40px;
+    max-width: 100%;
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    background-color: var(--eslem-color);
+
+}
+.eslemouederni .container:before {
+    content : "";
+    position: absolute;
+    left    : 25%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%;
+    border-bottom: 1px solid var(--writing-color);
+
+}
+.eslemouederni .container .intro{
+    margin-right: auto;
+    margin-left: auto;
+    justify-self: center;
+    align-self: center;
+    /* background-color: var(--dana-color); */
+
+}
+.eslemouederni .container .intro p{
+    font-size: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--second-color);
+}
+.aboutme .container{
+    width: 100vw;
+    height: 80vh;
+    max-width: 100%;
+    background-color: var(--eslem-color);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.aboutme .container::before {
+    content : "";
+    position: absolute;
+    left    : 25%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%;
+    border-bottom: 1px solid var(--writing-color);
+
+}
+.aboutme .container .img img{
+    width: 50%;
+    /* height: 50%; */
+    justify-self: center;
+    align-self: center;
+    margin: 0 100px;
+}
+.aboutme .container .abouteslem{
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+    line-height: 1.8rem;
+    color: var(--second-color);
+    transform: translateY(-70px);
+    
+}
