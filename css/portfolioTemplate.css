@@ -191,7 +191,7 @@ a{
     /* height: 50%; */
     justify-self: center;
     align-self: center;
-    margin: 0 100px;
+    margin: 0 150px;
 }
 .aboutdana .container .aboutdana2{
     width: 80%;
@@ -201,10 +201,7 @@ a{
     color: var(--second-color);
     transform: translateY(-70px);
 }
-/* contact form */
-#message {
-    display: block;
-}
+
 .eslemcontact .userform{
     width: 100vw;
     height: 70vh;
@@ -215,16 +212,10 @@ a{
     line-height: 1.6rem;
     margin-bottom: 10px;
 }
-.danacontact .userform{
-    width: 100vw;
-    height: 50vh;
-    max-width: 100%;
-    background-color: var(--dana-color);
-    text-align: center;
-    line-height: 1.6rem;
-    margin-bottom: 30px;
-}
+
 .contact .userform h1 {
+    font-size: 20px;
+    text-transform: uppercase;
     text-align: center;
     margin: 0 0 20px;
     color: var(--second-color);
@@ -239,10 +230,14 @@ a{
     border-bottom: 1px solid var(--second-color);
     outline: none;
     background: transparent;
+    transition:all;
+}
+.contact .userform input:focus{
+    border-bottom:2px solid var(--dana-color);
 }
 .contact .userform textarea{
     padding: 10px 0;
-    color: #fff;
+    color: var;
     background: none;
     outline: none;
     border: none;
@@ -259,6 +254,18 @@ a{
     border: none;
 }
 /* dana's contact form  */
+.danacontact .userform{
+    width: 100vw;
+    height: 60vh;
+    max-width: 100%;
+    background-color: var(--dana-color);
+    text-align: center;
+    line-height: 1.6rem;
+    margin-bottom: 20px;
+}
+.contact .userform input:focus{
+    border-bottom:2px solid var(--eslem-color);
+}
 @media (max-width:780px){
     body {
         font-size: 10px;
