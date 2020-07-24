@@ -94,10 +94,6 @@ a{
     margin-left: auto;
     color: var(--second-color);
 }
-.aboutme{
-        background-color: var(--eslem-color);
-
-}
 .aboutme .container{
     width: 100vw;
     height: 80vh;
@@ -121,17 +117,19 @@ a{
     /* height: 50%; */
     justify-self: center;
     align-self: center;
-    margin: 0 100px;
+    margin: 0 150px;
 }
 .aboutme .container .abouteslem{
     width: 80%;
     justify-self: center;
     align-self: center;
-    line-height: 1.8rem;
+    line-height: 1.9rem;
     color: var(--second-color);
-    transform: translateY(-70px);
+    transform: translateY(-80px);
 }
-
+.aboutme .container .abouteslem p{
+    font-size: 20px;
+}
 /* dana page */
 .dana .container{
     margin-right: auto;
@@ -209,12 +207,13 @@ a{
 }
 .eslemcontact .userform{
     width: 100vw;
-    height: 50vh;
+    height: 70vh;
     max-width: 100%;
     background-color: var(--eslem-color);
+    align-self: center;
     text-align: center;
     line-height: 1.6rem;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .danacontact .userform{
     width: 100vw;
