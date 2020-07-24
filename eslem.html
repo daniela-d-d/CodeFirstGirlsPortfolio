@@ -48,7 +48,25 @@
         </section>
         <section class="contact" id="contact">
             <div class="container">
-                <!-- form here  -->
+                <form action="https://formspree.io/sousououederni@gmail.com" method="POST">
+                    <label>
+                        E-mail
+                        <input type="email" name="email" placeholder="Your e-mail" class="email"/>
+                    </label>
+                    <label>
+                        Subject
+                        <input type="text" name="subject" placeholder="Subject" class="subject"/>
+                    </label>
+                    <label id="message">
+                        Message
+                        <textarea name="message" placeholder="Message" class="textarea"></textarea>
+                    </label>
+                    <div class="status">
+                    </div>
+                    <button type="submit" class="submit">
+                        Send
+                    </button>
+                </form>
             </div>
         </section>
     </main>
