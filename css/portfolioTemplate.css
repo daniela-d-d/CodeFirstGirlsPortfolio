@@ -6,7 +6,7 @@
     --second-color: #f8f5e3;
     --carmen-color: #A55FD7;
     --dana-color: #fbab26;
-    --eslem-color: #434E85;
+    --eslem-color: #353d64;
 }
 *{
     box-sizing: border-box;
@@ -71,7 +71,7 @@ a{
     background-color: var(--eslem-color);
 
 }
-.eslemouederni .container:before {
+.eslemouederni .container .intro:before {
     content : "";
     position: absolute;
     left    : 25%;
@@ -90,16 +90,19 @@ a{
 
 }
 .eslemouederni .container .intro p{
-    font-size: 80px;
+    font-size: 60px;
     margin-right: auto;
     margin-left: auto;
     color: var(--second-color);
+}
+.aboutme{
+        background-color: var(--eslem-color);
+
 }
 .aboutme .container{
     width: 100vw;
     height: 80vh;
     max-width: 100%;
-    background-color: var(--eslem-color);
     display: grid;
     grid-template-columns: repeat(2,1fr);
     
@@ -129,6 +132,7 @@ a{
     color: var(--second-color);
     transform: translateY(-70px);
 }
+
 /* dana page */
 .dana .container{
     margin-right: auto;
@@ -203,4 +207,47 @@ a{
 /* contact form */
 #message {
     display: block;
+}
+.contact .container h1 {
+    text-align: center;
+}
+.eslemcontact .container{
+    width: 100vw;
+    height: 50vh;
+    max-width: 100%;
+    background-color: var(--eslem-color);
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+}
+
+.contact .container email, subject, textarea {
+    outline: none;
+    border: none;
+
+
+}
+
+@media (max-width:780px){
+    body {
+        font-size: 10px;
+    }
+    .navbar{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .eslemouederni .container{
+        width: 100vw;
+        height: 80vh;  
+        margin-top: 10px;
+      }
+    .eslemouederni .container .intro p {
+        font-size: 20px;
+    }
+    .aboutme{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    } 
+
 }
