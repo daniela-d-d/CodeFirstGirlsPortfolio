@@ -16,7 +16,7 @@
 body{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    background-color: var(--second-color);
+    background-color: var(--eslem-color);
     color:#94949C ;
 }
 .navbar .container{
@@ -208,17 +208,44 @@ a{
 #message {
     display: block;
 }
-.contact .container h1 {
-    text-align: center;
-}
-.eslemcontact .container{
+.eslemcontact .userform{
     width: 100vw;
     height: 50vh;
     max-width: 100%;
     background-color: var(--eslem-color);
-    /* display: grid;
-    grid-template-columns: repeat(2,1fr); */
+    text-align: center;
+    line-height: 1.6rem;
+    margin-bottom: 30px;
 }
+.contact .userform h1 {
+    text-align: center;
+    margin: 0 0 20px;
+    color: var(--second-color);
+}
+.contact .userform input{
+    width: 25%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid var(--second-color);
+    outline: none;
+    background: transparent;
+}
+.contact .userform textarea{
+    padding: 10px 0;
+    color: #fff;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--second-color);
+    font-size: 16px;
+}
+::placeholder{
+    color: var(--second-color);
+}
+
 
 .contact .container email, subject, textarea {
     outline: none;
