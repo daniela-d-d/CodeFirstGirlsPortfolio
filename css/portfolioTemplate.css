@@ -129,6 +129,78 @@ a{
     color: var(--second-color);
     transform: translateY(-70px);
 }
+/* dana page */
+.dana .container{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:80px;
+    padding-top: 40px;
+    max-width: 100%;
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    background-color: var(--dana-color);
+
+}
+.dana .container:before {
+    content : "";
+    position: absolute;
+    left    : 25%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%;
+    border-bottom: 1px solid var(--writing-color);
+
+}
+.dana .container .intro{
+    margin-right: auto;
+    margin-left: auto;
+    justify-self: center;
+    align-self: center;
+    /* background-color: var(--dana-color); */
+
+}
+.dana .container .intro p{
+    font-size: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--second-color);
+}
+.aboutdana .container{
+    width: 100vw;
+    height: 80vh;
+    max-width: 100%;
+    background-color: var(--dana-color);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.aboutdana .container::before {
+    content : "";
+    position: absolute;
+    left    : 25%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%;
+    border-bottom: 1px solid var(--writing-color);
+
+}
+.aboutdana .container .img img{
+    width: 50%;
+    /* height: 50%; */
+    justify-self: center;
+    align-self: center;
+    margin: 0 100px;
+}
+.aboutdana .container .aboutdana2{
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+    line-height: 1.8rem;
+    color: var(--second-color);
+    transform: translateY(-70px);
+}
+/* contact form */
 #message {
     display: block;
 }
