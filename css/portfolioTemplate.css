@@ -128,5 +128,7 @@ a{
     line-height: 1.8rem;
     color: var(--second-color);
     transform: translateY(-70px);
-    
+}
+#message {
+    display: block;
 }
