@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css\portfolioTemplate.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="js\app.js"></script>
+    <title>Dana</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <div class="container">  
+                <ul>
+                    <li><a href="index.html" id="home">Home</a></li>
+                </ul>
+                <ul class="nav">   
+                    <li><a href="#portfolio" class="end">Portfolio</a></li>
+                    <li><a href="about.html" class="end">About</a></li>
+                    <li><a href="contact.html" class="end">Contact</a></li> 
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="dana">
+            <div class="container">
+                <div class="intro">
+                    <p class="p_dana">
+                        I am Daniela Dana Danilova - a microbiology student! 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="aboutdana" id="about">
+            <div class="container">
+                <div class="img">
+                    <img class="aboutimg" src="/img/aboutMe.svg" alt="aboutme">
+                </div>
+                <div class="aboutdana2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia blanditiis quo fugiat, 
+                        dolorum incidunt illo at accusamus quisquam
+                         obcaecati quod molestias! Eveniet vel delectus possimus facilis eum provident maxime illum!</p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,.</p><br>
+                    <p>lorem e</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <form action="https://formspree.io/daniela.d.d@outlook.com" method="POST">
+                    <label>
+                        E-mail
+                        <input type="email" name="email" placeholder="Your e-mail" class="email"/>
+                    </label>
+                    <label>
+                        Subject
+                        <input type="text" name="subject" placeholder="Subject" class="subject"/>
+                    </label>
+                    <label id="message">
+                        Message
+                        <textarea name="message" placeholder="Message" class="textarea"></textarea>
+                    </label>
+                    <div class="status">
+                    </div>
+                    <button type="submit" class="submit">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
