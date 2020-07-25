@@ -4,7 +4,6 @@
     --main-color : #212147;
     --writing-color: #a3a3a3;
     --second-color: #f8f5e3;
-    --carmen-color: #d75faf;
     --dana-color: #fbab26;
     --eslem-color: #353d64;
 }
@@ -31,7 +30,7 @@ body{
     width: 100%;
     padding: 20px;
     margin: 0px;
-    font-size: 25px;
+    font-size: 40px;
     background-color: var(--second-color);
     z-index: 100;
     /* background-color:var(--main-color); */
@@ -98,17 +97,15 @@ a{
     margin-right:auto;
     margin-left: auto;
 }
-.portfolio .portfolio_img .carmen, .dana, .eslem{
+.portfolio .portfolio_img .dana, .eslem{
     padding: 0 30px;
-    margin: 0 20px;
-    border: 3px solid var(--main-color);
+    margin: 0 50px;
+    border: 1px solid var(--main-color);
     border-bottom-width: 10px;
     border-radius: 8px;
     height: 600px;
 }
-.portfolio .portfolio_img .carmen{
-    background-color: var(--carmen-color);
-}
+
 .portfolio .portfolio_img .dana{
     background-color: var(--dana-color);
 }
@@ -124,9 +121,9 @@ img{
 .portfolio .portfolio_img .p{
     justify-self: center;
     font-size: 20px;
-    color: black;
+    color: var(--second-color);
     width: 220px; 
-    transform: translate(20px,-70px);
+    transform: translate(50px,-70px);
     
 }
 hr{

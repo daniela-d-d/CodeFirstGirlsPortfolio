@@ -4,9 +4,8 @@
     --main-color : #212147;
     --writing-color: #a3a3a3;
     --second-color: #f8f5e3;
-    --carmen-color: #d75faf;
     --dana-color: #fbab26;
-    --eslem-color: #353d64;
+    --eslem-color: #171616;
 }
 *{
     box-sizing: border-box;
@@ -30,7 +29,7 @@ body{
     width: 100%;
     padding: 20px;
     margin: 0px;
-    font-size: 25px;
+    font-size: 40px;
     background-color: var(--second-color);
     z-index: 100;
     
@@ -95,11 +94,20 @@ a{
     margin-left: auto;
     color: var(--second-color);
 }
+.aboutme h1{
+    text-align: center;
+    background-color: var(--eslem-color);;
+    font-size: 30px;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color: #ff4929;
+}
 .aboutme .container{
     width: 100vw;
     height: 80vh;
     max-width: 100%;
     display: grid;
+    background-color: var(--eslem-color);
     grid-template-columns: repeat(2,1fr);
     
 }
@@ -119,10 +127,10 @@ a{
     /* height: 50%; */
     justify-self: center;
     align-self: center;
-    margin: 0 50px;
+    margin: 0 150px;
 }
 .aboutme .container .abouteslem{
-    width: 100%;
+    width: 80%;
     justify-self: center;
     align-self: center;
     line-height: 1.9rem;
@@ -130,7 +138,8 @@ a{
     transform: translateY(-80px);
 }
 .aboutme .container .abouteslem p{
-    font-size: 20px;
+    font-size: 25px;
+    margin-right: 50px;
 }
 /* dana page */
 .dana .container{
@@ -221,7 +230,8 @@ a{
     text-transform: uppercase;
     text-align: center;
     margin: 0 0 20px;
-    color: var(--second-color);
+    letter-spacing: .2rem;
+    color: #ff4929;
 }
 .contact .userform input{
     width: 25%;
@@ -236,7 +246,7 @@ a{
     transition:all;
 }
 .contact .userform input:focus{
-    border-bottom:2px solid var(--dana-color);
+    border-bottom:2px solid #619479;
 }
 .contact .userform textarea{
     padding: 10px 0;
@@ -266,7 +276,7 @@ a{
     line-height: 4rem;
     margin-bottom: 20px;
 }
-.contact .userform input:focus{
+.danacontact .userform input:focus{
     border-bottom:2px solid var(--eslem-color);
 }
 
