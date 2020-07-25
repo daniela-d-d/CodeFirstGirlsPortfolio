@@ -31,7 +31,7 @@ header {
     text-decoration: none;
 }
 header #logo {
-    color: var(--eslem-color);
+    color: #fafafa;
     cursor: pointer;
 }
 header #logo span {
@@ -67,7 +67,7 @@ header #logo span {
     margin-top: 2px;
 }
 #menu > a {
-    color: var(--main-color);
+    color: #fafafa;
     text-decoration: none;
     margin-left: 38px;
 }
