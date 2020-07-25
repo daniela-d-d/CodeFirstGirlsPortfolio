@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,400&display=swap');
 /* font-weight 300 400 and regular 400 italic */
 :root{
-    --main-color : #3c3c54;
+    --main-color : #212147;
     --writing-color: #a3a3a3;
     --second-color: #f8f5e3;
-    --carmen-color: #A55FD7;
+    --carmen-color: #d75faf;
     --dana-color: #fbab26;
-    --eslem-color: #6C63FF;
+    --eslem-color: #353d64;
 }
 *{
     box-sizing: border-box;
@@ -161,7 +161,7 @@ a.active, a:hover {
 .portfolio .portfolio_img .carmen, .dana, .eslem{
     padding: 0 30px;
     margin: 0 20px;
-    border: 3px solid #3c3b53;
+    border: 3px solid var(--main-color);
     border-bottom-width: 10px;
     border-radius: 8px;
     height: 600px;
@@ -194,7 +194,7 @@ hr{
 }
 /* footer  */
 footer .footer_container {
-    margin: 10px;
+    margin: 0px;
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -205,7 +205,7 @@ footer .footer_container p{
     font-weight: 400;
     font-style: italic;
     ;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 footer .footer_container .input_container input[type=text]{
     padding: 5px 20px;

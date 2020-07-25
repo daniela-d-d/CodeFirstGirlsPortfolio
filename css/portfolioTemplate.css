@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,400&display=swap');
 
 :root{
-    --main-color : #3c3c54;
+    --main-color : #212147;
     --writing-color: #a3a3a3;
     --second-color: #f8f5e3;
-    --carmen-color: #A55FD7;
+    --carmen-color: #d75faf;
     --dana-color: #fbab26;
     --eslem-color: #353d64;
 }
@@ -200,7 +200,7 @@ nav ul li ul {
     /* height: 50%; */
     justify-self: center;
     align-self: center;
-    margin: 20px 180px;
+    margin: 50px 200px;
 }
 .aboutdana .container .aboutdana2{
     width: 80%;
@@ -224,7 +224,7 @@ nav ul li ul {
 }
 
 .contact .userform h1 {
-    font-size: 20px;
+    font-size: 30px;
     text-transform: uppercase;
     text-align: center;
     margin: 0 0 20px;
@@ -233,7 +233,7 @@ nav ul li ul {
 .contact .userform input{
     width: 25%;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
     margin-bottom: 30px;
     border: none;
@@ -270,7 +270,7 @@ nav ul li ul {
     max-width: 100%;
     background-color: var(--dana-color);
     text-align: center;
-    line-height: 1.6rem;
+    line-height: 4rem;
     margin-bottom: 20px;
 }
 .contact .userform input:focus{
@@ -305,7 +305,7 @@ hr{
 /* footer  */
 footer .footer_container {
     margin: 0px;
-    padding: 30px;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
     background-color: var(--second-color);
@@ -316,7 +316,7 @@ footer .footer_container p{
     font-weight: 400;
     font-style: italic;
     ;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 footer .footer_container .input_container input[type=text]{
     padding: 5px 20px;
