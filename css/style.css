@@ -21,7 +21,7 @@ body{
 }
 /* navbar */
 .container{
-    max-width: 1100px;
+    max-width: auto;
     margin: auto;
     overflow: hidden;
 }
@@ -32,6 +32,8 @@ body{
     padding: 20px;
     margin: 0px;
     font-size: 25px;
+    background-color: var(--second-color);
+    z-index: 100;
     /* background-color:var(--main-color); */
 }
 .navbar .container{
@@ -57,7 +59,17 @@ a{
     padding: 0 20px;
 }
 /* dana making portfolio a drop down menu */
-
+nav ul li {
+    position: relative;
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: var(--second-color);
+}
+nav ul li:hover ul{
+    display: block;
+}
 /* Dana trying to make nav interactive */
 a.active, a:hover {
     background: none;
@@ -108,7 +120,7 @@ a.active, a:hover {
 }
 /* section one welcome */
 .introduction .welcomecats {
-    margin-top: 80px;
+    margin-top: 110px;
     padding-top: 40px;
     margin-right: auto;
     margin-left: auto;
@@ -123,8 +135,8 @@ a.active, a:hover {
     background-repeat: no-repeat;
     margin-right: auto;
     margin-left: auto;
-    width: 760px;
-    height:400px;
+    width: 900px;
+    height:474px;
     text-align: center;
 }
 .img_text .welcome{

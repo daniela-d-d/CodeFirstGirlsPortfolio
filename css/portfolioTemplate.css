@@ -18,8 +18,9 @@ body{
     font-weight: 400;
     color:#94949C ;
 }
+/* navbar */
 .navbar .container{
-    max-width: 1100px;
+    max-width: auto;
     margin: auto ;
     overflow: hidden;
 }
@@ -57,11 +58,19 @@ a{
     text-decoration: none;
     padding: 0 20px;
 }
+nav ul li {
+    position: relative;
+}
+nav ul li ul {
+    display: block;
+    position: absolute;
+    background-color: var(--second-color);
+}
 /* eslem ouederni hi  */
 .eslemouederni .container{
     margin-right: auto;
     margin-left: auto;
-    margin-top:80px;
+    margin-top: auto;
     padding-top: 40px;
     max-width: 100%;
     width: 100vw;
@@ -89,7 +98,7 @@ a{
 
 }
 .eslemouederni .container .intro p{
-    font-size: 60px;
+    font-size: 80px; /* or keep 60px? its kind of small */
     margin-right: auto;
     margin-left: auto;
     color: var(--second-color);
@@ -134,7 +143,7 @@ a{
 .dana .container{
     margin-right: auto;
     margin-left: auto;
-    margin-top:80px;
+    margin-top: 70px;
     padding-top: 40px;
     max-width: 100%;
     width: 100vw;
@@ -191,7 +200,7 @@ a{
     /* height: 50%; */
     justify-self: center;
     align-self: center;
-    margin: 0 150px;
+    margin: 20px 180px;
 }
 .aboutdana .container .aboutdana2{
     width: 80%;
@@ -202,6 +211,7 @@ a{
     transform: translateY(-70px);
 }
 
+/* contact form */
 .eslemcontact .userform{
     width: 100vw;
     height: 70vh;
@@ -256,7 +266,7 @@ a{
 /* dana's contact form  */
 .danacontact .userform{
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
     max-width: 100%;
     background-color: var(--dana-color);
     text-align: center;
@@ -266,6 +276,7 @@ a{
 .contact .userform input:focus{
     border-bottom:2px solid var(--eslem-color);
 }
+/* responsive */
 @media (max-width:780px){
     body {
         font-size: 10px;
@@ -286,7 +297,32 @@ a{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-
     } 
-
+}
+hr{
+    border-color: black;
+}
+/* footer  */
+footer .footer_container {
+    margin: 0px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--second-color);
+}
+footer .footer_container p{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    ;
+    margin-bottom: 10px;
+}
+footer .footer_container .input_container input[type=text]{
+    padding: 5px 20px;
+    width: 250px;
+    border-radius: 1px;
+    color: var(--main-color);
+    /* outline: none; */
+    outline-color: var(--dana-color);
 }
