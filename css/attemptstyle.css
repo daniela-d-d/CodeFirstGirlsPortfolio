@@ -73,6 +73,7 @@ header #logo span {
     color: var(--main-color);
     text-decoration: none;
     margin-left: 28px;
+    font-family: Helvetica;
 }
 #about > a:hover {
     color: silver;
@@ -107,7 +108,7 @@ header #logo span {
 .fixed {
     z-index: 5000;
     background-color: #3F3D56; /* this is the colour change on scroll for BACKGROUND*/
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid gold;
 }
 header.fixed #logo {
     color: var(--dana-color);

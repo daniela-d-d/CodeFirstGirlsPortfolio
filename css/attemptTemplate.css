@@ -71,6 +71,7 @@ header #logo span {
     color: #fafafa;
     text-decoration: none;
     margin-left: 44px;
+    font-family: Helvetica;
 }
 #menu > a:hover {
     color: silver;
@@ -84,11 +85,11 @@ header #logo span {
 } */
 #menu > a:nth-child(1) {
     position: relative;
-    right: 36px;
+    right: 41.5px;
 }
 #menu > a:nth-child(2) {
     position: relative;
-    right: 52px;
+    right: 57.5px;
 }
 #menu > a:nth-child(3) {
     position: relative;
