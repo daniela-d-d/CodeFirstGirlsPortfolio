@@ -13,10 +13,14 @@
     margin: 0;
     padding: 0;
 }
-body{
+body, html{
+    width: 100%;
+    height: 100%;
+}
+body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    color:#94949C ;
+    color:#94949C;
 }
 /* navbar */
 .navbar .container{
@@ -86,7 +90,6 @@ a{
     margin-left: auto;
     justify-self: center;
     align-self: center;
-    /* background-color: var(--dana-color); */
 
 }
 .eslemouederni .container .intro p{
@@ -299,7 +302,7 @@ footer .footer_container {
     margin: 0px;
     padding: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: var(--second-color);
 }
 footer .footer_container p{
@@ -307,14 +310,13 @@ footer .footer_container p{
     font-size: 20px;
     font-weight: 400;
     font-style: italic;
-    ;
-    margin-bottom: 5px;
+    margin-top: 4px;
+    margin-left: -5px;
 }
 footer .footer_container .input_container input[type=text]{
     padding: 5px 20px;
     width: 250px;
     border-radius: 1px;
-    color: var(--main-color);
-    /* outline: none; */
+    color: var(--main-color); /* is this for search placeholder? i cant see the text on my page */
     outline-color: var(--dana-color);
 }

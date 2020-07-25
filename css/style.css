@@ -58,6 +58,7 @@ a{
     text-decoration: none;
     padding: 0 20px;
 }
+
 /* section one welcome */
 .introduction .welcomecats {
     margin-top: 110px;
@@ -75,8 +76,8 @@ a{
     background-repeat: no-repeat;
     margin-right: auto;
     margin-left: auto;
-    width: 900px;
-    height:474px;
+    width: 600px;
+    height: 250px;
     text-align: center;
 }
 .img_text .welcome{
