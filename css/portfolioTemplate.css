@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,400&display=swap');
 
 :root{
-    --main-color : #3c3c54;
+    --main-color : #212147;
     --writing-color: #a3a3a3;
     --second-color: #f8f5e3;
-    --carmen-color: #A55FD7;
+    --carmen-color: #d75faf;
     --dana-color: #fbab26;
     --eslem-color: #353d64;
 }
@@ -18,8 +18,9 @@ body{
     font-weight: 400;
     color:#94949C ;
 }
+/* navbar */
 .navbar .container{
-    max-width: 1100px;
+    max-width: auto;
     margin: auto ;
     overflow: hidden;
 }
@@ -61,7 +62,7 @@ a{
 .eslemouederni .container{
     margin-right: auto;
     margin-left: auto;
-    margin-top:80px;
+    margin-top: auto;
     padding-top: 40px;
     max-width: 100%;
     width: 100vw;
@@ -89,7 +90,7 @@ a{
 
 }
 .eslemouederni .container .intro p{
-    font-size: 60px;
+    font-size: 80px; /* or keep 60px? its kind of small */
     margin-right: auto;
     margin-left: auto;
     color: var(--second-color);
@@ -134,7 +135,7 @@ a{
 .dana .container{
     margin-right: auto;
     margin-left: auto;
-    margin-top:80px;
+    margin-top: 70px;
     padding-top: 40px;
     max-width: 100%;
     width: 100vw;
@@ -191,7 +192,7 @@ a{
     /* height: 50%; */
     justify-self: center;
     align-self: center;
-    margin: 0 150px;
+    margin: 50px 200px;
 }
 .aboutdana .container .aboutdana2{
     width: 80%;
@@ -202,6 +203,7 @@ a{
     transform: translateY(-70px);
 }
 
+/* contact form */
 .eslemcontact .userform{
     width: 100vw;
     height: 70vh;
@@ -214,7 +216,7 @@ a{
 }
 
 .contact .userform h1 {
-    font-size: 20px;
+    font-size: 30px;
     text-transform: uppercase;
     text-align: center;
     margin: 0 0 20px;
@@ -223,7 +225,7 @@ a{
 .contact .userform input{
     width: 25%;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
     margin-bottom: 30px;
     border: none;
@@ -256,16 +258,17 @@ a{
 /* dana's contact form  */
 .danacontact .userform{
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
     max-width: 100%;
     background-color: var(--dana-color);
     text-align: center;
-    line-height: 1.6rem;
+    line-height: 4rem;
     margin-bottom: 20px;
 }
 .contact .userform input:focus{
     border-bottom:2px solid var(--eslem-color);
 }
+/* responsive */
 @media (max-width:780px){
     body {
         font-size: 10px;
@@ -286,7 +289,32 @@ a{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-
     } 
-
+}
+hr{
+    border-color: black;
+}
+/* footer  */
+footer .footer_container {
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--second-color);
+}
+footer .footer_container p{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    ;
+    margin-bottom: 5px;
+}
+footer .footer_container .input_container input[type=text]{
+    padding: 5px 20px;
+    width: 250px;
+    border-radius: 1px;
+    color: var(--main-color);
+    /* outline: none; */
+    outline-color: var(--dana-color);
 }
