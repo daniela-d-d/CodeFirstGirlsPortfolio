@@ -241,10 +241,10 @@ header.fixed #logo {
 .aboutdana .container::before {
     content : "";
     position: absolute;
-    left: 25%;
-    bottom: 0;
-    height: 1px;
-    width: 50%;
+    left    : 25%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%;
     border-bottom: 2px solid var(--second-color);
 }
 .aboutdana .container .img img{
@@ -323,5 +323,4 @@ header.fixed #logo {
     background-color: var(--dana-color);
     text-align: center;
     line-height: 4rem;
-    margin-bottom: 10px;
 }
