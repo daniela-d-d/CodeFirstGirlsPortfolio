@@ -39,6 +39,7 @@ header #logo {
 header #logo span {
     font-size: 1.2em;
     line-height: 30px;
+    font-family: 'Suez One', serif;
 }
 @media (min-width: 701px) {
     #logo {
@@ -71,15 +72,15 @@ header #logo span {
 #about > a {
     color: var(--main-color);
     text-decoration: none;
-    margin-left: 38px;
+    margin-left: 28px;
 }
 #about > a:hover {
     color: silver;
     text-decoration: none;
 }
-#about > a:last-child {
-    margin-right: 13.1%;
-}
+/* #about > a:last-child {
+    margin-right: 2%;
+} */
 @media (max-width: 800px) {
     #logo {
         margin-top: px;

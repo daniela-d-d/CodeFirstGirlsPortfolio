@@ -6,16 +6,20 @@
     <link rel="stylesheet" href="css\attemptstyle.css">
     <script defer src="js\animation.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+        </style> 
     <title>Portfolio</title>
 </head>
 <body>
     <header>
         <div id="logo" onclick="slowScroll('#top')">
-            <span>Makingdreamscometrue</span>
+            <span>CodinGirls</span>
         </div>
         <div id="about">  
                 <a href="#" title="Portfolio" onclick="slowScroll('#main')">Portfolio</a>
                 <a href="#" title="About_menu" onclick="slowScroll('#about_menu')">About</a>
+                <a href="#" title="Projects" onclick="slowScroll('#projects')">Other Projects</a>
         </div>
     </header>
     <main>
@@ -54,6 +58,14 @@
                     About
                 </h1>
                 <p>This is a duo project made by Eslem Ouederni and Daniela Dana Danilova for</p><a href="https://codefirstgirls.org.uk/"> Code first girls </a><p>2020 July course.</p>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <div>
+                <h1>
+                    Other Projects
+                </h1>
+                <h3>Projects are under work!</h3> /* add loading animation? */
             </div>
         </section>
     </main>

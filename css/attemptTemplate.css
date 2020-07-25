@@ -37,6 +37,7 @@ header #logo {
 header #logo span {
     font-size: 1.2em;
     line-height: 30px;
+    font-family: 'Suez One', serif;
 }
 @media (min-width: 701px) {
     #logo {
@@ -69,14 +70,29 @@ header #logo span {
 #menu > a {
     color: #fafafa;
     text-decoration: none;
-    margin-left: 38px;
+    margin-left: 44px;
 }
 #menu > a:hover {
     color: silver;
     text-decoration: none;
 }
-#menu > a:last-child {
-    margin-right: 2%;
+/* #menu > a:last-child {
+    margin-right: 2.7%;
+}
+#menu > a:nth-child(2) {
+    margin-right: 2.4%;
+} */
+#menu > a:nth-child(1) {
+    position: relative;
+    right: 36px;
+}
+#menu > a:nth-child(2) {
+    position: relative;
+    right: 52px;
+}
+#menu > a:nth-child(3) {
+    position: relative;
+    right: 42px;
 }
 @media (max-width: 800px) {
     #logo {
