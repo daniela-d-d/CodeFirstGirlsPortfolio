@@ -58,14 +58,6 @@ a{
     text-decoration: none;
     padding: 0 20px;
 }
-nav ul li {
-    position: relative;
-}
-nav ul li ul {
-    display: block;
-    position: absolute;
-    background-color: var(--second-color);
-}
 /* eslem ouederni hi  */
 .eslemouederni .container{
     margin-right: auto;
