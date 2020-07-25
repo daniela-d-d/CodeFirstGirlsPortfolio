@@ -15,7 +15,7 @@
 <body>
     <header>
         <div id="logo" onclick="window.location.href='attempt.html'">
-            <span>CodinGirls</span>
+
         </div>
         <div id="menu">  
                 <a href="#" title="Portfolio" onclick="slowScroll('#top')">Portfolio</a>
@@ -62,12 +62,31 @@
                             <input placeholder="Tell me something..."></input>
                         </p>
                     </div>
-                        <button type="submit" class="submit">
-                            Send
-                        </button>
+                    <div class="button">
+                        <a href="#" id="button">Button</a>
+                        <script type="text/javascript">
+                        const buttons = document.querySelectorAll('#button');
+                        buttons.forEach(btn => {
+                            btn.addEventListener('click', function(e) {
+                                let x = e.clientX - e.target.offsetLeft;
+                                let y = e.clientY - e.target.offsetTop;
+                    
+                                let ripples = document.createElement('span');
+                                ripples.style.left = x + 'px';
+                                ripples.style.top = y + 'px';
+                                this.appendChild(ripples);
+                    
+                                setTimeout(() => {
+                                    ripples.remove()
+                                }, 1000);
+                            })
+                        })
+                        </script>
+                    </div>
                 </form>
             </div>
         </section>
     </main>
 </body>
 </html>
+
