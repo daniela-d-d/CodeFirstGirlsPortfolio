@@ -139,37 +139,36 @@ header.fixed #logo {
 } */
 
 /* section portfolio */
-.portfolio .portfolio_img {
+.portfolio .portfolio_img{
     display: flex;
     justify-content: center;
     align-content: space-around;
     max-width: 1110px;
     width: 100vw;
-    height: 60vw;
-    margin-right: auto;
+    height:50vw;
+    margin-right:auto;
     margin-left: auto;
-    /* margin-top: 400px; */
-    /* margin-bottom: auto; */
 }
-.portfolio .portfolio_img, .dana, .eslem{
+.portfolio .portfolio_img .dana, .eslem{
     padding: 0 30px;
     margin: 0 50px;
-    border: 3px solid var(--writing-color);
+    border: 1px solid var(--main-color);
     border-bottom-width: 10px;
     border-radius: 8px;
-    height: 700px;
-    /* width: 900px; */
+    height: 600px;
 }
+
 .portfolio .portfolio_img .dana{
     background-color: var(--dana-color);
 }
 .portfolio .portfolio_img .eslem{
     background-color: var(--eslem-color);
 }
-img {
-    justify-self: center;
+img{
+    /* justify-self: center; */
     height: 100%;
-    width: 100%;  
+    width:100%;
+    
 }
 .portfolio .portfolio_img .p{
     justify-self: center;
