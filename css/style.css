@@ -125,17 +125,21 @@ header.fixed #logo {
     color: #e98074; /* this is the colour change on scroll for HOVERED OVER LETTERS */
 }
 
+#void {
+    padding: 80px;
+    color: transparent;
+}
 /* section one welcome */
 .introduction .container{
     margin-top: 110px;
-    padding-top: 40px;
+    padding-top: 80px;
     margin-right: auto;
     margin-left: auto;
     max-width: 1100px;
     width: 100vw;
     height: 45vw;
 }
-.introduction .welcomecats .img_text{
+.introduction .cats .img_text{
     background-position: center center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -152,12 +156,12 @@ header.fixed #logo {
     align-content: space-around;
     max-width: 1110px;
     width: 100vw;
-    height:50vw;
+    height: 50vw;
     margin-right:auto;
     margin-left: auto;
 }
 .portfolio .portfolio_img .dana, .eslem{
-    padding: 0 30px;
+    padding: 0 20px;
     margin: 0 50px;
     border: 3px solid var(--main-color);
     border-bottom-width: 10px;
@@ -174,7 +178,7 @@ header.fixed #logo {
 img{
     /* justify-self: center; */
     height: 100%;
-    width:100%;
+    width: 100%;
     
 }
 .portfolio .portfolio_img .p{
