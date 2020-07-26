@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,400&display=swap');
 :root{
-    --main-color : #212147;
-    --writing-color: #a3a3a3;
+    --main-color : #612940; /* HI CHANGE THESE TO YOUR LIKING */
     --second-color: #f8f5e3;
-    --carmen-color: #d75faf;
-    --dana-color: #fbab26;
-    --eslem-color: #353d64;
+    --logo-color: #da483d; /* HI PLEASE KEEP LOGO AND MENU ON SCROLL THE SAME THEME, if you can */
+    --writing-color: #0f110c;
+    --second-writing-color: #eae7dc;
+    --background-color: #171616;
 }
 *{
     box-sizing: border-box;
@@ -19,7 +19,7 @@ body, html{
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    color:#94949C;
+    background: var(--background-color);
 }
 /* navbar */
 header {
@@ -31,7 +31,7 @@ header {
     text-decoration: none;
 }
 header #logo {
-    color: #fafafa;
+    color: var(--main-color);
     cursor: pointer;
 }
 header #logo span {
@@ -68,21 +68,15 @@ header #logo span {
     margin-top: 2px;
 }
 #menu > a {
-    color: #fafafa;
+    color: var(--main-color);
     text-decoration: none;
     margin-left: 44px;
     font-family: Helvetica;
 }
 #menu > a:hover {
-    color: silver;
+    color: #e98074;
     text-decoration: none;
 }
-/* #menu > a:last-child {
-    margin-right: 2.7%;
-}
-#menu > a:nth-child(2) {
-    margin-right: 2.4%;
-} */
 #menu > a:nth-child(1) {
     position: relative;
     right: 41.5px;
@@ -120,19 +114,19 @@ header #logo span {
 }
 .fixed {
     z-index: 5000;
-    background-color: #3F3D56; /* this is the colour change on scroll for BACKGROUND*/
+    background-color: #eae7dc; /* this is the colour change on scroll for BACKGROUND*/
     border-bottom: 1px solid silver;
 }
 header.fixed #logo {
-    color: var(--dana-color);
+    color: var(--logo-color);
 }
 .fixed #menu a {
-    color: #fbab26; /* this is the colour change on scroll for LETTERS */
+    color: #e85a4f; /* this is the colour change on scroll for LETTERS */
 }
 .fixed #menu a:hover {
-    color: silver; /* this is the colour change on scroll for HOVERED OVER LETTERS */
+    color: #e98074; /* this is the colour change on scroll for HOVERED OVER LETTERS */
 }
-/* eslem ouederni hi  */
+/* page */
 .eslemouederni .container{
     margin-right: auto;
     margin-left: auto;
@@ -140,7 +134,7 @@ header.fixed #logo {
     width: 100vw;
     height: 50vw;
     display: flex;
-    background-color: var(--eslem-color);
+    background-color: var(--dana-color);
 }
 .eslemouederni .container .intro:before {
     content : "";
@@ -158,16 +152,16 @@ header.fixed #logo {
     align-self: center;
 }
 .eslemouederni .container .intro p{
-    font-size: 80px; /* or keep 60px? its kind of small */
+    font-size: 80px;
     margin-right: auto;
     margin-left: auto;
-    color: var(--second-color);
+    color: var(--main-color);
 }
 .aboutme .container{
     width: 100vw;
     height: 120vh;
     max-width: 100%;
-    background-color: var(--eslem-color);
+    background-color: var(--dana-color);
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
@@ -178,7 +172,7 @@ header.fixed #logo {
     bottom  : 0;
     height  : 1px;
     width   : 50%;
-    border-bottom: 2px solid var(--writing-color);
+    border-bottom: 2px solid var(--second-color);
 }
 .aboutme .container .img img{
     width: 50%;
@@ -196,79 +190,11 @@ header.fixed #logo {
     color: var(--second-color);
     transform: translateY(-80px);
 }
-.aboutme .container .abouteslem p{
+.aboutdana .container .abouteslem p{
     font-size: 20px;
 }
 
-/* dana page */
-.dana .container{
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 100%;
-    width: 100vw;
-    height: 50vw;
-    display: flex;
-    background-color: var(--dana-color);
-}
-.dana .container .intro:before {
-    content : "";
-    position: absolute;
-    left    : 25%;
-    bottom  : 0;
-    height  : 1px;
-    width   : 50%;
-    border-bottom: 1px solid var(--writing-color);
-}
-.dana .container .intro{
-    margin-right: auto;
-    margin-left: auto;
-    justify-self: center;
-    align-self: center;
-}
-.dana .container .intro p{
-    font-size: 80px;
-    margin-right: auto;
-    margin-left: auto;
-    color: var(--second-color);
-}
-.aboutdana .container{
-    width: 100vw;
-    height: 120vh;
-    max-width: 100%;
-    background-color: var(--dana-color);
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-.aboutdana .container::before {
-    content : "";
-    position: absolute;
-    left    : 25%;
-    bottom  : 0;
-    height  : 1px;
-    width   : 50%;
-    border-bottom: 2px solid var(--second-color);
-}
-.aboutdana .container .img img{
-    width: 50%;
-    /* height: 50%; */
-    justify-self: center;
-    align-self: center;
-    margin: 50px 200px;
-    margin-top: 280px;
-}
-.aboutdana .container .aboutdana2{
-    width: 80%;
-    justify-self: center;
-    align-self: center;
-    line-height: 1.9rem;
-    color: var(--second-color);
-    transform: translateY(-80px);
-}
-.aboutdana .container .aboutdana2 p{
-    font-size: 20px;
-}
-
-/* contact form eslem*/
+/* contact form*/
 .eslemcontact .userform{
     width: 100vw;
     height: 70vh;
@@ -316,15 +242,6 @@ header.fixed #logo {
     border: none;
 }
 
-/* contact form dana */
-.danacontact .userform{
-    width: 100vw;
-    height: 70vh;
-    max-width: 100%;
-    background-color: var(--dana-color);
-    text-align: center;
-    line-height: 4rem;
-}
 /* #button {
     position: relative;
     display: inline-block;
