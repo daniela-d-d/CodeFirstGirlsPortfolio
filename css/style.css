@@ -26,9 +26,6 @@ body {
     color: black;
 }
 /* navbar */
-.navbar #about{
-    font-size: 30px;
-}
 header {
     top: 0;
     margin: 0;
@@ -76,6 +73,7 @@ header #logo span {
     font-size: 25px;
     line-height: 30px;
     margin-top: 2px;
+    font-size: 30px;
 }
 #about > a {
     color: var(--main-color);
