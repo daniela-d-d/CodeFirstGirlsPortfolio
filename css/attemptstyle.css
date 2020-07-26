@@ -26,7 +26,9 @@ body {
     color: black;
 }
 /* navbar */
-
+.navbar #about{
+    font-size: 30px;
+}
 header {
     top: 0;
     margin: 0;
@@ -43,7 +45,7 @@ header #logo {
     cursor: pointer;
 }
 header #logo span {
-    font-size: 1.2em;
+    font-size: 1.5em;
     line-height: 30px;
     font-family: 'Suez One', serif;
 }
@@ -193,7 +195,7 @@ h3 {
     height: 45vw;
 }
 .introduction .welcomecats .img_text{
-       background-image: url(img\undraw_welcome_cats_thqn.svg);
+       /* background-image: url(/img/welcomeCatsAttempt.svg); */
         background-position: center center;
         background-size: 100%;
         background-repeat: no-repeat;
