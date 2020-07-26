@@ -84,9 +84,7 @@ header #logo span {
     color: #e98074;
     text-decoration: none;
 }
-/* #about > a:last-child {
-    margin-right: 2%;
-} */
+
 @media (max-width: 800px) {
     #logo {
         margin-top: px;
@@ -95,19 +93,18 @@ header #logo span {
     }
     #about {
         width: 60%;
-        font-size: 1.1em;
+        font-size: 1.6em;
     }
-/* @media always afterwards */
 }
 @media (max-width: 700px) {
     #logo {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
-    #about {
+    #menu {
         float: right;
-        font-size: 1em;
+        font-size: 1.4em;
         width: 70%;
-        margin-top: -30px;
+        margin-top: -32px;
     }
 }
 .fixed {
@@ -129,6 +126,7 @@ header.fixed #logo {
     padding: 80px;
     color: transparent;
 }
+
 /* section one welcome */
 .introduction .container{
     margin-top: 110px;
@@ -149,6 +147,7 @@ header.fixed #logo {
     height: 250px;
     text-align: center;
 }
+
 /* section portfolio */
 .portfolio .portfolio_img{
     display: flex;
@@ -157,7 +156,7 @@ header.fixed #logo {
     max-width: 1110px;
     width: 100vw;
     height: 50vw;
-    margin-right:auto;
+    margin-right: auto;
     margin-left: auto;
 }
 .portfolio .portfolio_img .dana, .eslem{
@@ -168,7 +167,6 @@ header.fixed #logo {
     border-radius: 8px;
     height: 600px;
 }
-
 .portfolio .portfolio_img .dana{
     background-color: var(--dana-color);
 }
@@ -182,11 +180,11 @@ img{
     
 }
 .portfolio .portfolio_img .p{
+    display: flex;
     justify-self: center;
     font-size: 50px;
-    color: black;
     width: 220px; 
-    transform: translate(125px,-70px);
+    transform: translate(150px,-70px);
     color: white;
 }
 h1 {
