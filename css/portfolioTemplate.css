@@ -104,7 +104,7 @@ a{
 }
 .aboutme .container{
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     max-width: 100%;
     display: grid;
     background-color: var(--eslem-color);
@@ -216,7 +216,7 @@ a{
 /* contact form */
 .eslemcontact .userform{
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
     max-width: 100%;
     background-color: var(--eslem-color);
     align-self: center;
@@ -266,6 +266,23 @@ a{
     outline: none;
     border: none;
 }
+.contact button {
+    margin-top: 30px;
+    border: none;
+    width: 120px;
+    height: 35px;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.submit:hover,
+.submit:focus {
+    color: #ff4929;
+    box-shadow: inset 10em 0 0 0 #619479;
+}
+
 /* dana's contact form  */
 .danacontact .userform{
     width: 100vw;
