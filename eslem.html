@@ -67,27 +67,12 @@
                             <input placeholder="Do you want to tell me something.."></input>
                     </p>
                    </div>
-                   <div class="button">
-                        <a href="#" id="button">Button</a>
-                        <script type="text/javascript">
-                        const buttons = document.querySelectorAll('#button');
-                        buttons.forEach(btn => {
-                            btn.addEventListener('click', function(e) {
-                                let x = e.clientX - e.target.offsetLeft;
-                                let y = e.clientY - e.target.offsetTop;
-                
-                                let ripples = document.createElement('span');
-                                ripples.style.left = x + 'px';
-                                ripples.style.top = y + 'px';
-                                this.appendChild(ripples);
-                                
-                                setTimeout(() => {
-                                    ripples.remove()
-                                }, 1000);
-                            })
-                        })
-                        </script>
-                    </div>
+                   <button class="button">
+                       <svg class="button_svg">
+                           <rect class="button_rect"></rect>
+                        </svg>
+                        Send
+                    </button> 
                 </form>
             </div>
         </section>
