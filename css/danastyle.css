@@ -90,7 +90,6 @@ header #logo span {
         width: 60%;
         font-size: 1.1em;
     }
-/* @media always afterwards */
 }
 @media (max-width: 700px) {
     #logo {
@@ -125,7 +124,7 @@ header.fixed #logo {
     width: 100vw;
     height: 50vw;
     display: flex;
-    background-color: var(--dana-color);
+    background-color: transparent;
 }
 .dana .container .intro:before {
     content : "";
@@ -182,7 +181,7 @@ header.fixed #logo {
     transform: translateY(-80px);
 }
 .aboutdana .container .aboutdana2 p{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /* contact form*/
@@ -218,7 +217,7 @@ header.fixed #logo {
 }
 .contact .userform textarea{
     padding: 10px 0;
-    color: var;
+    color: var; /* whats this for???*/
     background: none;
     outline: none;
     border: none;
@@ -257,8 +256,7 @@ header.fixed #logo {
     transition: 2s;
     background-color: transparent;
     border-color: transparent;
-  
-  
+}
 .button:hover, .button:focus {
     outline: none;
     color: var(--end);

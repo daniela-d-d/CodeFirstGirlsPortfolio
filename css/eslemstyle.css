@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,400&display=swap');
 :root{
-    --main-color : #612940; /* HI CHANGE THESE TO YOUR LIKING */
+    --main-color : rgb(255, 73, 41);
     --second-color: #f8f5e3;
     --logo-color: #da483d; /* HI PLEASE KEEP LOGO AND MENU ON SCROLL THE SAME THEME, if you can */
     --writing-color: #0f110c;
     --second-writing-color: #eae7dc;
+    --contact-color: #619479;
     --background-color: #171616;
 }
 *{
@@ -80,18 +81,6 @@ header #logo span {
     color: #e98074;
     text-decoration: none;
 }
-/* #menu > a:nth-child(1) {
-    position: relative;
-    right: 41.5px;
-}
-#menu > a:nth-child(2) {
-    position: relative;
-    right: 57.5px;
-}
-#menu > a:nth-child(3) {
-    position: relative;
-    right: 42px;
-} */
 @media (max-width: 800px) {
     #logo {
         margin-top: px;
@@ -102,7 +91,6 @@ header #logo span {
         width: 60%;
         font-size: 1.1em;
     }
-/* @media always afterwards */
 }
 @media (max-width: 700px) {
     #logo {
@@ -129,7 +117,7 @@ header.fixed #logo {
 .fixed #menu a:hover {
     color: #e98074; /* this is the colour change on scroll for HOVERED OVER LETTERS */
 }
-/* page */
+/* About */
 .eslemouederni .container{
     margin-right: auto;
     margin-left: auto;
@@ -137,7 +125,7 @@ header.fixed #logo {
     width: 100vw;
     height: 50vw;
     display: flex;
-    background-color: var(--dana-color);
+    background-color: transparent;
 }
 .eslemouederni .container .intro:before {
     content : "";
@@ -164,7 +152,7 @@ header.fixed #logo {
     width: 100vw;
     height: 120vh;
     max-width: 100%;
-    background-color: var(--dana-color);
+    background-color: transparent;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
@@ -194,7 +182,7 @@ header.fixed #logo {
     transform: translateY(-80px);
 }
 .aboutdana .container .abouteslem p{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /* contact form*/
@@ -202,7 +190,7 @@ header.fixed #logo {
     width: 100vw;
     height: 70vh;
     max-width: 100%;
-    background-color: var(--eslem-color);
+    background-color: transparent;
     text-align: center;
     line-height: 4rem;
 }
@@ -216,7 +204,7 @@ header.fixed #logo {
 .contact .userform input{
     width: 25%;
     padding: 10px 0;
-    font-size: 20px;
+    font-size: 22px;
     color: #fff;
     margin-bottom: 40px;
     border: none;
@@ -230,7 +218,7 @@ header.fixed #logo {
 }
 .contact .userform textarea{
     padding: 10px 0;
-    color: var;
+    color: var; /* whats this for???*/
     background: none;
     outline: none;
     border: none;
@@ -243,6 +231,9 @@ header.fixed #logo {
 .contact .container email, subject, textarea {
     outline: none;
     border: none;
+}
+#contacttitle {
+    color: var(--main-color);
 }
 
 /* button send */
@@ -266,35 +257,32 @@ header.fixed #logo {
     transition: 2s;
     background-color: transparent;
     border-color: transparent;
-  }
-  
-  .button:hover, .button:focus {
+}
+.button:hover, .button:focus {
     outline: none;
     color: var(--end);
-  }
-  
-  .button_svg, .button_rect {
+}
+.button_svg, .button_rect {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     fill: none;
-  }
-  .button_rect {
+}
+.button_rect {
     stroke: var(--begin);
     stroke-width: 5;
     stroke-dasharray: var(--height) var(--width);
     stroke-dashoffset: calc(
-      2 * var(--width) 
-      + 2 * var(--height)
-      + var(--height) / 2 
-    );
-    transition: 2s;
-  }
-  
-  .button:hover .button_rect, .button:focus .button_rect {
+        2 * var(--width) 
+        + 2 * var(--height)
+        + var(--height) / 2 
+        );
+        transition: 2s;
+}
+.button:hover .button_rect, .button:focus .button_rect {
     stroke: var(--end);
     stroke-dashoffset: calc(var(--height) + var(--height) / 2);
-  }
+}
   
