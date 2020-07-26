@@ -70,10 +70,9 @@ header #logo span {
 }
 #about {
     text-align: right;
-    font-size: 25px;
     line-height: 30px;
     margin-top: 2px;
-    font-size: 30px;
+    font-size: 35px;
 }
 #about > a {
     color: var(--main-color);

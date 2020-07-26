@@ -23,19 +23,22 @@ body {
 }
 /* navbar */
 header {
+    top: 0;
+    margin: 0;
     width: 100%;
     padding: 18px;
     background: transparent;
     float: left;
     position: fixed;
     text-decoration: none;
+    z-index: 100;
 }
 header #logo {
     color: var(--main-color);
     cursor: pointer;
 }
 header #logo span {
-    font-size: 1.2em;
+    font-size: 1.5em;
     line-height: 30px;
     font-family: 'Suez One', serif;
 }
@@ -63,21 +66,21 @@ header #logo span {
 }
 #menu {
     text-align: right;
-    font-size: 25px;
     line-height: 30px;
     margin-top: 2px;
+    font-size: 35px;
 }
 #menu > a {
     color: var(--main-color);
     text-decoration: none;
-    margin-left: 44px;
+    margin-left: 28px;
     font-family: Helvetica;
 }
 #menu > a:hover {
     color: #e98074;
     text-decoration: none;
 }
-#menu > a:nth-child(1) {
+/* #menu > a:nth-child(1) {
     position: relative;
     right: 41.5px;
 }
@@ -88,7 +91,7 @@ header #logo span {
 #menu > a:nth-child(3) {
     position: relative;
     right: 42px;
-}
+} */
 @media (max-width: 800px) {
     #logo {
         margin-top: px;
@@ -204,7 +207,7 @@ header.fixed #logo {
     line-height: 4rem;
 }
 .contact .userform h1 {
-    font-size: 30px;
+    font-size: 40px;
     text-transform: uppercase;
     text-align: center;
     margin: 0 0 20px;
@@ -215,9 +218,9 @@ header.fixed #logo {
     padding: 10px 0;
     font-size: 20px;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     border: none;
-    border-bottom: 1px solid var(--second-color);
+    border-bottom: 2px solid var(--second-color);
     outline: none;
     background: transparent;
     transition: all;
