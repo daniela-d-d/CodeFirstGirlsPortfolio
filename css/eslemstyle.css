@@ -214,7 +214,7 @@ header.fixed #logo {
     transition: all;
 }
 .contact .userform input:focus{
-    border-bottom: 2px solid var(--dana-color);
+    border-bottom: 2px solid var(--contact-color);
 }
 .contact .userform textarea{
     padding: 10px 0;
@@ -241,7 +241,7 @@ header.fixed #logo {
     --width: 210px;
     --height: 70px;
     --begin: #f8f5e3;
-    --end: #612940;
+    --end: rgb(255, 73, 41);
     position: relative;
     display: inline-block;
     width: var(--width);
@@ -257,6 +257,7 @@ header.fixed #logo {
     transition: 2s;
     background-color: transparent;
     border-color: transparent;
+    cursor: pointer;
 }
 .button:hover, .button:focus {
     outline: none;

@@ -256,6 +256,7 @@ header.fixed #logo {
     transition: 2s;
     background-color: transparent;
     border-color: transparent;
+    cursor: pointer;
 }
 .button:hover, .button:focus {
     outline: none;
