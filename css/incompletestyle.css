@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #d8c3a5;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 100px;
+}
+h1 {
+    color: #e85a4f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* button send */
+.button {
+    --width: 210px;
+    --height: 70px;
+    --begin: #f8f5e3;
+    --end: rgb(255, 73, 41);
+    position: absolute;
+    display: inline-block;
+    
+    width: var(--width);
+    height: var(--height);
+    line-height: var(--height);
+    color: var(--begin);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 2s;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+.button:hover, .button:focus {
+    outline: none;
+    color: var(--end);
+}
+.Container_btn{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.button_svg, .button_rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: none;
+}
+.button_rect {
+    stroke: var(--begin);
+    stroke-width: 5;
+    stroke-dasharray: var(--height) var(--width);
+    stroke-dashoffset: calc(
+        2 * var(--width) 
+        + 2 * var(--height)
+        + var(--height) / 2 
+        );
+        transition: 2s;
+}
+.button:hover .button_rect, .button:focus .button_rect {
+    stroke: var(--end);
+    stroke-dashoffset: calc(var(--height) + var(--height) / 2);
+}

@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,400&display=swap');
+:root{
+    --main-color : rgb(255, 73, 41);
+    --second-color: #f8f5e3;
+    --logo-color: #da483d; /* HI PLEASE KEEP LOGO AND MENU ON SCROLL THE SAME THEME, if you can */
+    --writing-color: #0f110c;
+    --second-writing-color: #eae7dc;
+    --contact-color: #619479;
+    --background-color: #171616;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    background: var(--background-color);
+}
+/* navbar */
+header {
+    top: 0;
+    margin: 0;
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    float: left;
+    position: fixed;
+    text-decoration: none;
+    z-index: 100;
+}
+header #logo {
+    color: var(--main-color);
+    cursor: pointer;
+}
+header #logo span {
+    font-size: 1.5em;
+    line-height: 30px;
+    font-family: 'Suez One', serif;
+}
+@media (min-width: 701px) {
+    #logo {
+        float: left;
+        width: 30%;
+        font-size: 1.6em;
+    }
+    #menu {
+        float: right;
+        width: 60%;
+    }
+}
+@media (min-width: 871px) {
+    #logo {
+        float: left;
+        width: 30%;
+        font-size: 1.6em;
+    }
+    #menu {
+        float: right;
+        width: 60%;
+    }
+}
+#menu {
+    text-align: right;
+    line-height: 30px;
+    margin-top: 2px;
+    font-size: 35px;
+}
+#menu > a {
+    color: var(--main-color);
+    text-decoration: none;
+    margin-left: 28px;
+    font-family: Helvetica;
+}
+#menu > a:hover {
+    color: #e98074;
+    text-decoration: none;
+}
+@media (max-width: 800px) {
+    #logo {
+        margin-top: px;
+        width: 30%;
+        font-size: 1.4em;
+    }
+    #menu {
+        width: 60%;
+        font-size: 1.6em;
+    }
+}
+@media (max-width: 700px) {
+    #logo {
+        font-size: 1.5em;
+    }
+    #menu {
+        float: right;
+        font-size: 1.4em;
+        width: 70%;
+        margin-top: -32px;
+    }
+}
+.fixed {
+    z-index: 5000;
+    background-color: #eae7dc; /* this is the colour change on scroll for BACKGROUND*/
+    border-bottom: 1px solid silver;
+}
+header.fixed #logo {
+    color: var(--logo-color);
+}
+.fixed #menu a {
+    color: #e85a4f; /* this is the colour change on scroll for LETTERS */
+}
+.fixed #menu a:hover {
+    color: #e98074; /* this is the colour change on scroll for HOVERED OVER LETTERS */
+}
+/* About */
+.eslemouederni .container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    background-color: transparent;
+}
+.eslemouederni .container .intro:before {
+    content : "";
+    position: absolute;
+    left    : 25%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%;
+    border-bottom: 1px solid var(--writing-color);
+}
+.eslemouederni .container .intro{
+    margin-right: auto;
+    margin-left: auto;
+    justify-self: center;
+    align-self: center;
+}
+.eslemouederni .container .intro p{
+    font-size: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--main-color);
+}
+.aboutme .container{
+    width: 100vw;
+    height: 120vh;
+    max-width: 100%;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.aboutme .container::before {
+    content : "";
+    position: absolute;
+    left    : 25%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%;
+    border-bottom: 2px solid var(--second-color);
+}
+.aboutme .container .img img{
+    width: 50%;
+    /* height: 50%; */
+    justify-self: center;
+    align-self: center;
+    margin: 50px 200px;
+    margin-top: 280px;
+}
+.aboutme .container .abouteslem{
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+    line-height: 1.9rem;
+    color: var(--second-color);
+    transform: translateY(-80px);
+}
+.aboutdana .container .abouteslem p{
+    font-size: 25px;
+}
+
+/* contact form*/
+.eslemcontact .userform{
+    width: 100vw;
+    height: 70vh;
+    max-width: 100%;
+    background-color: transparent;
+    text-align: center;
+    line-height: 4rem;
+}
+.contact .userform h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 20px;
+    color: var(--second-color);
+}
+.contact .userform input{
+    width: 25%;
+    padding: 10px 0;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 40px;
+    border: none;
+    border-bottom: 2px solid var(--second-color);
+    outline: none;
+    background: transparent;
+    transition: all;
+}
+.contact .userform input:focus{
+    border-bottom: 2px solid var(--contact-color);
+}
+.contact .userform textarea{
+    padding: 10px 0;
+    color: var; /* whats this for???*/
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--second-color);
+    font-size: 16px;
+}
+::placeholder{
+    color: var(--second-color);
+}
+.contact .container email, subject, textarea {
+    outline: none;
+    border: none;
+}
+#contacttitle {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--main-color);
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+}
+
+/* button send */
+.button {
+    --width: 210px;
+    --height: 70px;
+    --begin: #f8f5e3;
+    --end: rgb(255, 73, 41);
+    position: relative;
+    display: inline-block;
+    width: var(--width);
+    height: var(--height);
+    line-height: var(--height);
+    color: var(--begin);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 2s;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+.button:hover, .button:focus {
+    outline: none;
+    color: var(--end);
+}
+.button_svg, .button_rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: none;
+}
+.button_rect {
+    stroke: var(--begin);
+    stroke-width: 5;
+    stroke-dasharray: var(--height) var(--width);
+    stroke-dashoffset: calc(
+        2 * var(--width) 
+        + 2 * var(--height)
+        + var(--height) / 2 
+        );
+        transition: 2s;
+}
+.button:hover .button_rect, .button:focus .button_rect {
+    stroke: var(--end);
+    stroke-dashoffset: calc(var(--height) + var(--height) / 2);
+}
+
+/* social media */
+li {
+    list-style: none;
+    margin: 50px 30px;
+    height: auto;
+    display: inline-block;
+    font-size: 40px;
+    padding: 3px 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    transition: .5s;
+    cursor: pointer;
+}
+li:hover {
+    color: var(--main-color);
+    border: 2px solid;
+    transition: .5s;
+}
+#github, #linkedin {
+    color: #fff;
+}
