@@ -181,7 +181,7 @@ header.fixed #logo {
     color: var(--second-color);
     transform: translateY(-80px);
 }
-.aboutdana .container .abouteslem p{
+.aboutme .container .abouteslem p{
     font-size: 25px;
 }
 
