@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    <script defer src="js\scrollmenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+        </style>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>CodinGirls</span>
+        </div>
+        <div id="about">  
+                <a href="Incomplete.html" title="Portfolio" onclick="slowScroll('#main')">Portfolio</a>
+                <a href="Incomplete.html" title="About_menu" onclick="slowScroll('#about_menu')">About</a>
+                <a href="Incomplete.html" title="Projects" onclick="slowScroll('#projects')">Other Projects</a>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <section class="introduction">
+            <div class ="container">
+                <div class="img_text">
+                    <img src="img/welcomeCatsAttempt.svg" alt="Welcome" id="cats"> 
+                </div>
+            </div>
+        </section>
+        <!-- <section>
+            <div id="main"><p id="void">text</p></div>
+        </section> -->
+        <section class="portfolio" id="main">
+            <div class="portfolio_img">
+                <div class="dana">
+                   <a href="dana.html"> <img src="img\undraw_portfolio_feedback_exfk.svg" alt="dana portfolio"></a>
+                   <div class="p">
+                    <p>Dana</p>
+                </div>
+                </div>
+                <div class="eslem">
+                   <a href="eslem.html"> <img src="img/undraw_portfolio_feedback_Blue.svg" alt="eslem portfolio"></a>
+                   <div class="p">
+                    <p>Eslem</p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="about_menu" class="About_menu">
+            <div>
+                <h1>
+                    About
+                </h1>
+                <p>This is a duo project made by Eslem Ouederni and Daniela Dana Danilova for</p><a href="https://codefirstgirls.org.uk/"> Code first girls </a><p>2020 July course.</p>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <div>
+                <h1>
+                    Other Projects
+                </h1>
+                <h3>Projects are under work!</h3> /* add loading animation? */
+            </div>
+        </section> -->
+    </main>
+</body>
+</html>

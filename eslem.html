@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\eslemstyle.css">
+    <link rel="stylesheet" type='text/css' href="fontawesome-free-5.14.0-web/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="js\contactform.js"></script>
+    <script defer src="js\scrollmenu.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+        </style> 
+    <title>Eslem</title>
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="window.location.href='index.html'">
+            <span>CodinGirls</span>
+        </div>
+        <div id="menu">  
+            <a href="#" title="Portfolio" onclick="slowScroll('#top')">Portfolio</a>
+            <a href="#" title="About_menu" onclick="slowScroll('#about_menu')">About</a>
+                <a href="#" title="Contact" onclick="slowScroll('#contact')">Contact</a> 
+        </div>
+    </header>
+    <main>
+        <section class="eslemouederni">
+            <div class="container" id="top">
+                <div class="intro">
+                    <p class="p_eslemouederni">
+                        I am Eslem Ouederni, a newbie coder ! 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="aboutme" id="about">
+            <div class="container" id="about_menu">
+                <div class="img">
+                    <img class="aboutimg" src="img/undraw_in_thought_gjsf.svg" alt="aboutme">
+                </div>
+                <div class="abouteslem">
+                    <p>
+                        Hi there, my name is Eslem Ouederni, I'm a CS student. Since the pandemic, I have decided to start learning how to code at home.
+                    </p><br>
+                    <p>As of now, I really want to be a frontend developer, I'm planning to keep on studying more after the CFG course,
+                         and try to build more websites either alone or with others. 
+                    </p><br>
+                    <p>I'm building this website with my CFG colleague, but I'm planning to make it an official portfolio in the future. 
+                    </p><br>
+                    <p>Hoping to see some changes in here, where I'll start to post my works</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact eslemcontact" id="contact">
+            <div class="userform">
+                <h1 id="contacttitle"> Contact</h1>
+                <form action="https://formspree.io/sousououederni@gmail.com" method="POST">
+                    <div class="emaildiv">
+                            <input type="email" name="email" placeholder="Your e-mail" class="email" autocomplete="off"/>
+                    </div>
+                  <div class="subject">
+                        <input type="text" name="subject" placeholder="Subject" class="subject" autocomplete="off"/>
+                    </div>
+                    <div class="message">
+                        <!-- <textarea name="message" placeholder="Message" cols="30"></textarea> -->
+                        <p type="Message:">
+                            <input placeholder="Do you want to tell me something.."></input>
+                    </p>
+                   </div>
+                   <button class="button">
+                       <svg class="button_svg">
+                           <rect class="button_rect"></rect>
+                        </svg>
+                        Send
+                    </button> 
+                </form>
+                <div class="media">
+                    <ul>
+                        <li><a href="https://github.com/EslemOuederni" target="_blank" id="github"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#" target="_blank" id="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\danastyle.css">
+    <link rel="stylesheet" type='text/css' href="fontawesome-free-5.14.0-web/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="js\contactform.js"></script>
+    <script defer src="js\scrollmenu.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+        </style> 
+    <title>Dana</title>
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="window.location.href='index.html'">
+            <span>CodinGirls</span>
+        </div>
+        <div id="menu">  
+                <a href="#" title="Portfolio" onclick="slowScroll('#top')">Portfolio</a>
+                <a href="#" title="About_menu" onclick="slowScroll('#about_menu')">About</a>
+                <a href="#" title="Contact" onclick="slowScroll('#contact')">Contact</a>
+        </div>
+    </header>
+    <main>
+        <section class="dana">
+            <div class="container" id="top">
+                <div class="intro">
+                    <p class="p_dana">
+                        I am Daniela Dana Danilova - a microbiology student! 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="aboutdana" id="about">
+            <div class="container" id="about_menu">
+                <div class="img">
+                    <img class="aboutimg" src="img\undraw_my_universe_lxnl_logo.svg" alt="aboutme">
+                </div>
+                <div class="aboutdana2">
+                    <p>Hello, Dana here! </p><br>
+                        <p>I am studying microbiology and hope to work in synthetic biology field with bacteriophages in the future.</p><br>
+                    <p>This summer I started learning how to code and created this website as a part of Code First Girls web development course project, which I completed with my colleague - Eslem Ouederni. We will be working on more projects together so come back later to look at 'Other Projects' section on the main page!</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact danacontact" id="contact">
+            <div class="userform">
+                <h1 id="contacttitle"> Contact</h1>
+                <form action="https://formspree.io/daniela.d.d@outlook.com" method="POST">
+                    <div class="emaildiv">
+                        <input type="email" name="email" placeholder="Your e-mail" class="email" autocomplete="off"/>
+                    </div>
+                     <div class="subject">
+                        <input type="text" name="subject" placeholder="Subject" class="subject" autocomplete="off"/>
+                    </div>
+                    <div class="message">
+                        <p type="Message:">
+                            <input placeholder="Tell me something..."></input>
+                        </p>
+                    </div>
+                    <button class="button" formtarget="_blank">
+                        <svg class="button_svg">
+                            <rect class="button_rect"></rect>
+                         </svg>
+                         Send
+                     </button> 
+                </form>
+                <div class="media">
+                    <ul>
+                        <li><a href="https://github.com/daniela-d-d" target="_blank" id="github"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/daniela-dana-danilova-b98ab61b2/" target="_blank" id="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
